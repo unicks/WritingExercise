@@ -1,2 +1,2 @@
 # WritingExercise
-A website that generates writing exercises
+A website that generates writing exercises (Hebrew)
