@@ -1,17 +1,24 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <ApolloExample msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
-import ApolloExample from './components/ApolloExample.vue'
+import gql from 'graphql-tag'
 
 export default {
   name: 'App',
-  components: {
-    ApolloExample
+  apollo: {
+    exercises: gql`
+      query {
+        exercises {
+        id
+        source
+        body
+      }
+    }
+    `
   }
 }
 </script>
