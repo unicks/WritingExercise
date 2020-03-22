@@ -1,7 +1,0 @@
-query allExercises {
-    exercises {
-      id
-      source
-      body
-    }
-}
