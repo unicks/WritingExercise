@@ -2,6 +2,9 @@
   "name": "writing-exercise",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "10.15.3"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -14,7 +17,7 @@
     "bulma": "^0.8.0",
     "bulma-extensions": "^6.2.7",
     "express": "^4.17.1",
-    "node": "10.15.3",
+    "node": "^13.11.0",
     "serve-static": "^1.14.1",
     "vue": "^2.6.11",
     "vue-apollo": "^3.0.0-beta.11",
