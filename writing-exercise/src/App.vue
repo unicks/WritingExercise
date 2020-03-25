@@ -25,7 +25,8 @@
       <div class="container has-text-centered">
         <div id="footerColumns" class="columns is-centered is-mobile">
           <div class="column is-narrow">
-            <button class="button is-medium is-success is-inverted is-hover tooltip"
+            <button id="copyExrcButton"
+                    class="button is-medium is-success is-inverted is-hover tooltip"
                     @click="copyToClipboard"
                     :data-tooltip="copyTooltipText">
               <span class="icon">
@@ -36,7 +37,8 @@
             </button>
           </div>
           <div class="column is-narrow">
-            <button class="button is-medium is-success is-inverted is-hover tooltip"
+            <button id="nextExrcButton" 
+                    class="button is-medium is-success is-inverted is-hover tooltip"
                     @click="nextExercise"
                     data-tooltip="תרגיל חדש">
               <span class="icon">
@@ -55,6 +57,7 @@
 <script>
 import gql from 'graphql-tag'
 import ExersiceCard from './components/ExerciseCard.vue'
+import { mobileCheck } from './js/common'
 
 export default {
   name: 'App',
@@ -99,6 +102,12 @@ export default {
     nextExercise() {
       this.wasCopied = false;
       this.currIndex = (this.currIndex + 1) % this.shuffledExercises.length;
+      if(mobileCheck()) {
+        setTimeout(() => {
+          document.getElementById("nextExrcButton").classList.remove("tooltip")
+        },1000)
+        document.getElementById("nextExrcButton").classList.add("tooltip")
+      }
     },
 
     copyToClipboard() {
@@ -111,6 +120,12 @@ export default {
       content.setSelectionRange(0, 99999);
       document.execCommand('copy');
       document.body.removeChild(content);
+      if(mobileCheck()) {
+        setTimeout(() => {
+          document.getElementById("copyExrcButton").classList.remove("tooltip")
+        },1500)
+        document.getElementById("copyExrcButton").classList.add("tooltip")
+      }
     }
   },
   mounted() {
