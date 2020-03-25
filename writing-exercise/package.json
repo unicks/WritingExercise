@@ -7,11 +7,14 @@
     "build": "vue-cli-service build",
     "css-build": "node-sass --omit-source-map-url src/sass/mystyles.scss src/css/mystyles.css",
     "css-watch": "npm run css-build -- --watch",
-    "start-css": "npm run css-watch"
+    "start-css": "npm run css-watch",
+    "start": "node server.js"
   },
   "dependencies": {
     "bulma": "^0.8.0",
     "bulma-extensions": "^6.2.7",
+    "express": "^4.17.1",
+    "serve-static": "^1.14.1",
     "vue": "^2.6.11",
     "vue-apollo": "^3.0.0-beta.11",
     "vue-youtube": "^1.4.0"
