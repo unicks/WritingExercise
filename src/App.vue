@@ -2,7 +2,7 @@
   <div class="hero is-fullheight is-success">
     <div class="hero-head">
       <div class="columns is-mobile is-centered">
-        <figure id="spokenBanner" class="image is-512x512">
+        <figure id="spokenBanner" class="image">
           <a href="http://spokenoar.org.il/" target="_blank">
             <img src="./assets/banner.png">
           </a>

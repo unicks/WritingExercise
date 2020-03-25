@@ -2,7 +2,7 @@
     <div class="card column is-half">
         <div class="card-content">
             <div class="content">
-                <h2>#{{this.exersice.id}}</h2>
+                <h2 id="exerciseId">#{{this.exersice.id}}</h2>
                 <br>
                 <component :is="source" v-bind="sourceProps"></component>
                 <p id="exerciseBody">{{this.exersice.body}}</p>
@@ -48,5 +48,9 @@ export default {
 #exerciseBody {
   direction: rtl !important;
   unicode-bidi: embed;
+  font-family: 'Alef', sans-serif;
+}
+#exerciseId {
+    font-family: 'Alef', sans-serif;
 }
 </style>
