@@ -2,7 +2,8 @@
 
 $card-content-padding: 0.5rem;
 $card-background-color: hsl(0, 0%, 86%);
+$success: #4491cf;
+$dimensions: 16 24 32 48 64 96 128 384;
 
 @import "../../node_modules/bulma/bulma.sass";
 @import "../../node_modules/bulma-extensions/bulma-tooltip/src/sass/index.sass"
-//@import '../../node_modules/bulma-extensions/bulma-tooltip';
