@@ -2,7 +2,7 @@
   <div class="hero is-fullheight is-success">
     <div class="hero-head">
       <div class="columns is-mobile is-centered">
-        <figure id="spokenBanner" class="image">
+        <figure class="image">
           <a href="http://spokenoar.org.il/" target="_blank">
             <img src="./assets/banner.png">
           </a>
@@ -18,11 +18,6 @@
           </exersice-card>
           </transition>
         </div>
-      </div>
-    </div>
-
-    <div class="hero-foot">
-      <div class="container has-text-centered">
         <div id="footerColumns" class="columns is-centered is-mobile">
           <div class="column is-narrow">
             <button id="copyExrcButton"
@@ -47,6 +42,34 @@
                 </svg>
               </span>
             </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-foot">
+      <div class="container has-text-centered">
+        <div id="footerColumns" class="columns is-centered is-mobile">
+          <div class="column is-narrow">
+            <figure class="image is-64x64">
+              <a href="https://www.facebook.com/Spokenoar/" target="_blank">
+                <img src="./assets/facebook.png">
+              </a>
+            </figure>
+          </div>
+          <div class="column is-narrow">
+            <figure class="image is-64x64">
+              <a href="https://www.youtube.com/channel/UClRs26sHhbKy2om1OwLdXVg/about" target="_blank">
+                <img src="./assets/youtube.png">
+              </a>
+            </figure>
+          </div>
+          <div class="column is-narrow">
+            <figure class="image is-64x64">
+              <a href="https://www.instagram.com/spokenoar/?" target="_blank">
+                <img src="./assets/instagram.png">
+              </a>
+            </figure>
           </div>
         </div>
       </div>
@@ -135,9 +158,6 @@ export default {
 </script>
 
 <style scoped>
-#spokenBanner {
-  margin-top: 44px !important;
-}
 #footerColumns {
   margin-bottom: 0px !important;
 }
