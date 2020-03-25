@@ -2,9 +2,9 @@
   <div class="hero is-fullheight is-success">
     <div class="hero-head">
       <div class="columns is-mobile is-centered">
-        <figure class="image">
+        <figure id="spokenBanner" class="image is-512x512">
           <a href="http://spokenoar.org.il/" target="_blank">
-            <img id="spokenLogo" src="./assets/banner.png">
+            <img src="./assets/banner.png">
           </a>
         </figure>
       </div>
@@ -135,7 +135,7 @@ export default {
 </script>
 
 <style scoped>
-#spokenLogo {
+#spokenBanner {
   margin-top: 44px !important;
 }
 #footerColumns {
