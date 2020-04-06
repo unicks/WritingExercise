@@ -5,7 +5,7 @@
                 <h2 id="exerciseId">#{{this.exersice.id}}</h2>
                 <br>
                 <component :is="source" v-bind="sourceProps"></component>
-                <p id="exerciseBody">{{this.exersice.body}}</p>
+                <p id="exerciseBody" class="is-size-6">{{this.exersice.body}}</p>
             </div>
         </div>
     </div>

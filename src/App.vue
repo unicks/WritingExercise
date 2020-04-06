@@ -2,7 +2,7 @@
     <div id="hero" class="hero is-fullheight is-success">
       <div class="hero-head">
         <div class="columns is-mobile is-centered">
-          <figure class="image is-630x630">
+          <figure class="image" :class="{'is-630x630': !isMobile}">
             <img src="./assets/banner.png">
           </figure>
         </div>
@@ -86,7 +86,6 @@
   import gql from 'graphql-tag'
   import ExersiceCard from './components/ExerciseCard.vue'
   import { mobileCheck } from './js/common'
-  import backgroundUrl from './assets/background.png'
 
   export default {
     name: 'App',
@@ -110,7 +109,6 @@
         currIndex: 0,
         wasCopied: false,
         showCard: true,
-        backgroundUrl
       }
     },
     computed: {
@@ -126,6 +124,9 @@
         } else {
           return "(: הועתק, אפשר לשלוח"
         }
+      },
+      isMobile() {
+        return mobileCheck();
       }
     },
     methods: {
