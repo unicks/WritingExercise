@@ -1,19 +1,6 @@
 # writing-exercise
 
-## Project setup
-```
-npm install
-```
+## What is this?
+A simple website that presents random writing exercises for inspiration.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Deployed on [Heroku](http://writing-exercise.herokuapp.com/).
